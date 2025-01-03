@@ -37,7 +37,13 @@ const UsersTable = () => {
 
    return (
       <div className="container mx-auto p-4">
-         <h1 className="text-2xl font-bold text-center mb-6">Users Table</h1>
+         <div className="w-[300px]  px-4 py-4">
+            <h1 className="text-4xl font-normal">
+               <span className="font-bold text-4xl">NOLimit</span>Buzz
+            </h1>
+            <p className="text-xs">...creative & technology company</p>
+         </div>
+         <h2 className="text-2xl font-bold text-center mb-6">Users List</h2>
          {/* Search Bar */}
          <div className="relative mb-4 mt-2 w-full lg:w-1/3 mx-auto">
             <input
@@ -51,7 +57,7 @@ const UsersTable = () => {
          {/* Table */}
          <div className="overflow-x-auto">
             <table className="min-w-full bg-white rounded border border-gray-300">
-               <thead className="bg-blue-600">
+               <thead className="bg-black">
                   <tr>
                      <th className="py-2 px-4 min-w-[10rem] border-b-2 border-r-2 border-gray-300 text-white">
                         Name
