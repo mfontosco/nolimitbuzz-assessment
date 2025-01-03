@@ -21,7 +21,6 @@ const UsersTable = () => {
          });
    }, []);
 
- 
    useEffect(() => {
       const filtered = users.filter((user) =>
          [user.name, user.username, user.email, user.phone]
@@ -32,7 +31,6 @@ const UsersTable = () => {
       setFilteredUsers(filtered);
    }, [searchQuery, users]);
 
-  
    const handleRowClick = (userId) => {
       navigate(`/user/${userId}`);
    };
